@@ -26,10 +26,10 @@ jobs:
  run: docker build -t proyecto-ci-cd .
  - name: Verificar imagen
  run: docker images proyecto-ci-cd
-Curso: Sistemas Operativos
  deploy:
  needs: docker
  runs-on: ubuntu-latest
  steps:
  - name: Simular despliegue
  run: echo "Desplegando contenedor Docker..."
+
